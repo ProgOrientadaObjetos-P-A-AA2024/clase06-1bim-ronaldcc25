@@ -72,7 +72,7 @@ public class ArchivoEscritura {
             salidaArchivo.close();
             /*
             Con este codigo esta sacando los datos del archivo usando en ese
-            momento
+            momento 
             */
         } catch (IOException e) {
             System.err.println("Error al crear el archivo.");

@@ -42,7 +42,7 @@ public class ArchivoLectura {
 
     public void establecerRutaArchivo() {
         rutaArchivo = String.format("data/%s.txt",
-                obtenerNombreArchivo());;
+                obtenerNombreArchivo());
     }
 
     public String obtenerNombreArchivo() {
@@ -79,7 +79,12 @@ public class ArchivoLectura {
                 String profesor = linea_partes.get(2);
 
                 ArrayList<String> cadenaProfesor = new ArrayList<>(
+                        
                         Arrays.asList(profesor.split("\\|")));
+                /*
+                para ubicar un separador fuera del ; o , es necesario ubicar 
+                doble \\ mas el signo para separar *
+                */
                 // ["Tara Hernandez", "contratado"]
                 //        0                 1
 
