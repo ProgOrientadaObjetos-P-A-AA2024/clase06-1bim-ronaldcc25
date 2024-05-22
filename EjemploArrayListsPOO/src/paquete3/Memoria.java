@@ -11,4 +11,20 @@ package paquete3;
 public class Memoria {
     private String marca;
     private double costo;
+    
+    public void establecerMarca(String m){
+        marca = m;
+    }
+    
+    public void establecerCosto (double c){
+        costo = c;
+    }
+    
+    public String obtenerMarca(){
+        return marca;
+    }
+    
+    public double obtenerCosto(){
+        return costo;
+    }
 }
